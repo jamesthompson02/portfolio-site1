@@ -499,6 +499,55 @@ var swiper = new Swiper(".card-carousel", {
 });
 
 
+// This next block of code relates to inserting a pie chart into my skills section using the Google
+// Charts API. The general template, while altered, has been copied and pasted from the Google Chart
+// API documentation.
+
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['React/JavaScript',     5],
+          ['CSS',      2],
+          ['HTML',  1],
+          
+        ]);
+
+        var options = {
+          title: 'How I Spend A Typical Workday',
+          titleTextStyle: {
+              color: '#3fd1d6',
+              fontSize: 30,
+          },
+          backgroundColor: {
+              stroke: '#3fd1d6',
+              strokeWidth: 5,
+          },
+          chartArea: {
+              left: '25%',
+              top: '25%',
+              width: '65%',
+              height: '65%',
+          },
+          fontSize: 20,
+          fontName: 'Inter',
+          legend: 'none',
+          pieSliceText: 'label',
+          
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+
+
+
+
 
 
 

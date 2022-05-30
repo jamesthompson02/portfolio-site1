@@ -395,6 +395,20 @@
         min-height: 100vh;
         padding-top: 2em;
         padding-bottom: 2rem;
+        
+    }
+
+    #skills-section h2 {
+        font-family: 'Inter';
+        font-size: 3rem;
+        margin: 0.5em 0 1em 0;
+        padding: 0 1rem 0 1rem;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    #piechart {
+        
     }
 
     #contact-section {
