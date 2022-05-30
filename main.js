@@ -442,7 +442,7 @@ proposalInput.addEventListener('change', () => {
 // would behave if the form details had been successfully submitted.
 
 contactBtn.addEventListener('click', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     let errorChecks = exclamationMarks.filter(each => {
         return each.classList.contains('hide');
     })

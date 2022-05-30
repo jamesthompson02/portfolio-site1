@@ -393,6 +393,8 @@
     #skills-section {
         width: 100%;
         min-height: 100vh;
+        padding-top: 2em;
+        padding-bottom: 2rem;
     }
 
     #contact-section {
