@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    
+    <title>James' Portfolio</title>
+</head>
+<body>
+    <header class="background-white">
+        <nav class="border-bottom-cyan">
+            <div id="home-link">
+                <a href="#home-section"><div class="fa-brands fa-react font-cyan"></div></a>
+                <a href="#home-section" class="font-cyan">James' Portfolio</a>
+            </div>  
+            <div id="other-navbar-links">
+                <div class="dropdown">
+                    <button id="dropdown-menu" class="identifier2 background-cyan font-white"><div class="fa-solid fa-bars"></div></button>
+                    <div id="links-list" class="dropdown-content hide">
+                      <a href="#about-section" class="identifier background-white font-cyan border-bottom-cyan ubuntu">About</a>
+                      <a href="#project-section" class="identifier background-white font-cyan border-bottom-cyan ubuntu">Projects</a>
+                      <a href="#skills-section" class="identifier background-white font-cyan border-bottom-cyan ubuntu">Skills</a>
+                      <a href="#contact-section" class="identifier background-white font-cyan border-bottom-cyan ubuntu">Contact</a>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#about-section" class="font-cyan">About</a></li>
+                    <li><a href="#project-section" class="font-cyan">Projects</a></li>
+                    <li><a href="#skills-section" class="font-cyan">Skills</a></li>
+                    <li><a href="#contact-section" class="font-cyan">Contact</a></li>
+                </ul>
+                <div id="toggle-container2">
+                    <div id="toggle-slider"></div>
+                    <div id="toggle-button"><div class="fa-solid fa-sun" id="mode-icon"></div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="background-cyan">
+        <section>
+            <div id="home-section">
+                <div id="home-headlines" >
+                    <h1 class="font-white">Hi, I'm James Thompson</h1>
+                    <h2 class="font-white">I'm a <span style="text-decoration:underline">Front End Web Developer</span> based in London. </h2>
+                    <h2 class="font-white">I specialise in <span style="text-decoration:underline">HTML, CSS, JavaScript and React</span>.</h2>
+                </div>
+                <div id="picture-container" class="background-white">
+                    <img src="images/1.jpg" alt="Picture of James"/>
+                
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="about-section" class="background-white">
+                <div id="about-section-text">
+                    <h2 class="font-cyan">About Me</h2>
+                    <p class="font-cyan">
+                        I originally have a background in both finance and law, but in early 2022 I decided that 
+                        I wanted a career change. Consequently, I started learning to code in February. 
+                        Initially, I began by learning the basics of Python, since I'd read online that Python 
+                        had the easiest syntax for beginners to understand and that there was a lot of free information
+                        to help me if I got stuck on a problem.
+                    </p>
+                    <p class="font-cyan">
+                        This experience in Python led to me being accepted into a front end web development
+                        bootcamp run by Bath Spa University. This bootcamp ran from early March to late May 2022
+                        and taught me the fundamentals of HTML, CSS JavaScript and React.
+                    </p>
+                    <p class="font-cyan">
+                        Using the skills learned during my time at Bath Spa University, I then managed to secure a 
+                        place at Futureproof - a technology training company which runs its own bootcamp
+                        for successful applicants and then secures a two-year commercial placement for people who 
+                        successfully graduate.
+                    </p>
+                    <p class="font-cyan">
+                        Overall, I would say I am learning a lot and improving rapidly. If my profile interests you,
+                        I would recommend that you look at my work-related social media (LinkedIn and GitHub) or
+                        download my CV. 
+
+                    </p>
+                </div>
+                <div id="about-images-container">
+                    <div id="image-container" class="background-cyan">
+                        <img src="images/about-section-pic.jpg" alt="Picture of laptop"/>
+                    </div>
+                    <div id="work-links">
+                        <a href="https://www.linkedin.com/in/james-thompson-b88391105/" target="_blank" rel="noreferrer"><div class="font-cyan fa-brands fa-linkedin"></div></a>
+                        <a href="files/dummy-CV.pdf" download><button id="cv-btn"class="background-cyan font-white btn">Download CV</button></a>
+                        <a href="https://github.com/jamesthompson02" target="_blank" rel="noreferrer"><div class="font-cyan fa-brands fa-github"></div></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div id="project-section" class="background-cyan">
+
+                <h2 class="font-white">Projects</h2>
+
+                <div class="card-carousel background-cyan swiper min-height"> 
+                    <div class="card-container swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Form Validation Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/form-validation-project.png" alt="Screenshot of form validation project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/form-validation-project" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/form-validation-project/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Starbucks Landing Page
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/starbucks-landing-page.png" alt="Screenshot of Starbucks landing page" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/starbucks-landing-page" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/starbucks-landing-page/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Bio Page
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/bio-page.png" alt="Screenshot of bio page project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/fp-int" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/fp-int/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Accordion Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/accordion-project.png" alt="Screenshot of accordion project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/accordion-1-project" target="_blank" rel="noreferrer" class="font-white project-link">Source code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/accordion-1-project/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Counter Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/counter-project.png" alt="Screenshot of counter project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/counter-project" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/counter-project/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Slideshow Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/slideshow-project.png" alt="Screenshot of slideshow project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/slideshow-project" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/slideshow-project/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Random Colour Generator
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/color-generator-project.png" alt="Screenshot of random colour generator project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/random-colour-generator-project" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/random-colour-generator-project/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Car Card Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/car-card-project.png" alt="Screenshot of car card project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/fmc-3-column-preview-card-component" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/fmc-3-column-preview-card-component/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Stats Preview Card
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/stats-preview-project.png" alt="Screenshot of stats preview project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/fmc-stats-preview-card-component" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/fmc-stats-preview-card-component/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Interactive Rating Component
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/interactive-rating-component.png" alt="Screenshot of interactive rating component project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/fmc-interactive-rating-component" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/fmc-interactive-rating-component/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Five Star Rating System
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/star-rating-system.png" alt="Screenshot of star rating project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/star-rating-system" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                        <button class="card-button background-cyan font-white"><a href="https://jamesthompson02.github.io/star-rating-system/" target="_blank" rel="noreferrer" class="font-white project-link">Live Website</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide">
+                                <div class="card background-white height-and-width">
+                                    <h3 class="card-title font-cyan">
+                                        Weather API Project
+                                    </h3>
+                                    <div class="card-image-container background-cyan">
+                                        <img src="images/weather-api-project.png" alt="Screenshot of weather API project" class="card-image " />
+                                    </div>
+                                    <p class="card-description font-cyan">
+                                        This was a great project for developing and applying my knowledge of regular
+                                        expressions to validate form entries. 
+                                    </p>
+                                    <div class="card-button-container">
+                                        <button class="card-button background-cyan font-white"><a href="https://github.com/jamesthompson02/weather-api-project" target="_blank" rel="noreferrer" class="font-white project-link">Source Code</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+                
+
+            </div>
+        </section>
+
+        <section>
+            <div id="skills-section" class="background-white">
+
+            </div>
+        </section>
+
+        <section>
+            <div id="contact-section" class="background-cyan">
+                <h2 class="font-white">Contact</h2>
+                <p class="font-white">
+                    If you want to get in touch about a project, you can reach out to me by 
+                    filling out the form just below. Please leave your full name, your email 
+                    and summarise your project in no less than 100 words and no more than 400 words.
+                </p>
+                <form>
+                    <label for="full-name-input" id="full-name-label" class="font-white input-label">Full name:</label><br>
+                    <input type="text" id="full-name-input" class="background-white font-cyan input-class">
+                    <div class="fa-solid fa-circle-check font-white hide"></div>
+                    <div class="fa-solid fa-circle-exclamation font-white hide"></div>
+                    <br>
+                    <div id="invalid-full-name" class="invalid-response font-white hide">
+                        Hello
+                    </div>
+
+                    <label for="email-input" id="email-label" class="font-white input-label">Email:</label><br>
+                    <input type="email" id="email-input" class="background-white font-cyan input-class">
+                    <div class="fa-solid fa-circle-check font-white hide"></div>
+                    <div class="fa-solid fa-circle-exclamation font-white hide"></div>
+                    <br>
+                    <div id="invalid-email" class="invalid-response font-white hide">
+                        Hello
+                    </div>
+
+                    <label for="project-input" id="project-label" class="font-white input-label">Proposed Project:</label><br>
+                    <textarea id="project-input" class="background-white font-cyan"></textarea>
+                    <div class="fa-solid fa-circle-check font-white hide"></div>
+                    <div class="fa-solid fa-circle-exclamation font-white hide"></div>
+                    <br>
+                    <div id="invalid-proposal" class="invalid-response font-white hide">
+                        Hello
+                    </div>
+
+                    <button type="submit" id="contact-btn" class="background-white font-cyan">Submit</button>
+
+                </form>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="background-white">
+        <div id="footer" class="font-cyan">
+            © James Thompson, 2022
+        </div>
+
+    </footer>
+    
+</body>
+</html>
