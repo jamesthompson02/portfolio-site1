@@ -607,6 +607,10 @@
         min-height: 550px;
     }
 
+    .min-height {
+        min-height: 700px;
+    }
+
 
 }
 
@@ -630,6 +634,10 @@
 
     #toggle-container2 {
         margin-right: 2rem;
+    }
+
+    .min-height {
+        min-height: 600px;
     }
 
 
