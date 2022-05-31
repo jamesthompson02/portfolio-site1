@@ -147,10 +147,13 @@
         width: 2rem;
         margin-right: 1rem;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     } 
 
     .fa-bars {
-        transform: translateY(-0.2rem) translateX(-0.445rem);
+        /* transform: translateY(-0.2rem) translateX(-0.445rem); */
         padding: 0.5rem;
     }
 
