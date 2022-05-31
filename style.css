@@ -41,7 +41,7 @@
     } 
 
     #home-link a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-decoration: none;
         font-family: 'Ubuntu';
     }
@@ -103,7 +103,7 @@
 
     #toggle-container2 {
         position: relative;
-        margin-right: 2rem;
+        margin-right: 0.25rem;
     }
 
     #toggle-slider {
@@ -210,8 +210,8 @@
     }
 
     #picture-container {
-        width: 390px;
-        height: 390px;
+        width: 360px;
+        height: 360px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -599,6 +599,39 @@
     }
 }
 
+@media screen and (min-width: 400px) {
+    .height-and-width {
+        min-height: 550px;
+    }
+
+
+}
+
+@media screen and (min-width:420px) {
+    #home-link a {
+        font-size: 2rem;
+    }
+        
+
+}
+
+@media screen and (min-width: 450px) {
+    .height-and-width {
+        min-height: 500px;
+    }
+
+    #picture-container {
+        width: 390px;
+        height: 390px;
+    }
+
+    #toggle-container2 {
+        margin-right: 2rem;
+    }
+
+
+}
+
 @media screen and (min-width: 935px) {
     header nav div ul {
         display: flex;
@@ -622,6 +655,8 @@
         text-align: start;
         /* width: 500px; */
     }
+
+    
 
 
 
